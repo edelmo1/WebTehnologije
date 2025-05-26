@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 1",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2023.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 1"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 1"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 2",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2023.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 2"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 2"
+      },
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 2 ||"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 2 ||"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 2 |||"
+      },
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 2 |||"
+      },
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 2 ||||"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 3",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2023.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 3"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 3"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 4",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2022.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 1"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 1"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 5",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2023.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 1"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 1"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "tip_nekretnine": "Stan",
+    "naziv": "Useljiv stan Sarajevo 6",
+    "kvadratura": 58,
+    "cijena": 232000,
+    "tip_grijanja": "plin",
+    "lokacija": "Novo Sarajevo",
+    "godina_izgradnje": 2019,
+    "datum_objave": "01.10.2023.",
+    "opis": "Sociis natoque penatibus.",
+    "upiti": [
+      {
+        "korisnik_id": 1,
+        "tekst_upita": "Pitanje korisnika 1 nekretnini s ID-em 1"
+      },
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 1"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "tip_nekretnine": "Poslovni prostor",
+    "naziv": "Mali poslovni prostor 1",
+    "kvadratura": 20,
+    "cijena": 70000,
+    "tip_grijanja": "struja",
+    "lokacija": "Centar",
+    "godina_izgradnje": 2005,
+    "datum_objave": "20.08.2023.",
+    "opis": "Magnis dis parturient montes.",
+    "upiti": [
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 4"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "tip_nekretnine": "Poslovni prostor",
+    "naziv": "Mali poslovni prostor 2",
+    "kvadratura": 20,
+    "cijena": 70000,
+    "tip_grijanja": "struja",
+    "lokacija": "Centar",
+    "godina_izgradnje": 2005,
+    "datum_objave": "20.08.2023.",
+    "opis": "Magnis dis parturient montes.",
+    "upiti": [
+      {
+        "korisnik_id": 2,
+        "tekst_upita": "Pitanje korisnika 2 nekretnini s ID-em 5"
+      }
+    ]
+  }
+]

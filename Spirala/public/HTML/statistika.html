@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistika Nekretnina</title>
+    <link rel="stylesheet" type="text/css" href="../Style/statistika.css">
+</head>
+<body>
+
+    <div id="meni"></div>
+
+
+
+    <p><strong>UPUTSTVO:</strong> Stranica funkcioniše na način da unesete tražene parametre za onu funkcionalnost za koju se odlučite(odvojene su po nazivima), a nakon toga kliknete na dugme za izračunavanje.</p>
+    <p>Ugodno korištenje!</p>
+    <div class="container">
+        <h1>Statistika nekretnina</h1>
+
+        <form id="statistikaForm">
+            <!-- Period i cijena za histogram -->
+            <fieldset>
+                <legend><it>1. Za histogram</it></legend>
+            <label for="periodi">Raspon godina:<it>(u formatu od-do,od-do...)</it></label>
+            <input type="text" id="periodi" name="periodi" placeholder="Raspon godina" required>
+            <br><br>
+            
+            <label for="cijene">Raspon cijene:<it>(u formatu od-do,od-do...)</it></label>
+            <input type="text" id="cijene" name="cijene" placeholder="Raspon cijene" required>
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend><it>2. Za moje nekretnine</it></legend>
+                    <!-- Moje nekretnine -->
+            <label for="mojeNekretnine">Korisnik:<it>(u formatu Ime Prezime)</it>:</label>
+            <input type="text" id="korisnik" name="mojeNekretnine" placeholder="Unesite korisničko ime">
+            <br><br>
+        </fieldset>
+
+            <!-- Prosječna kvadratura i outlier kriteriji -->
+            <fieldset>
+                <legend><it>3. Kriteriji za outlier i prosječnu kvadraturu</it></legend>
+                <label for="tipNekretnine">Tip nekretnine:</label>
+                <input type="text" id="tipNekretnine" name="tipNekretnine" placeholder="Unesite tip nekretnine">
+
+                <label for="minKvadratura">Minimalna kvadratura:</label>
+                <input type="number" id="minKvadratura" name="minKvadratura" placeholder="Unesite minimalnu kvadraturu">
+
+                <label for="maxKvadratura">Maksimalna kvadratura:</label>
+                <input type="number" id="maxKvadratura" name="maxKvadratura" placeholder="Unesite maksimalnu kvadraturu">
+
+                <label for="minCijena">Minimalna cijena:</label>
+                <input type="number" id="minCijena" name="minCijena" placeholder="Unesite minimalnu cijenu">
+
+                <label for="maxCijena">Maksimalna cijena:</label>
+                <input type="number" id="maxCijena" name="maxCijena" placeholder="Unesite maksimalnu cijenu">
+                
+                <label for="svojstvo">Naziv svojstva<it>(Za outlier)</it>:</label>
+                <input type="text" id="svojstvo" name="svojsto" placeholder="Unesite svojstvo">
+                
+                <bold><it>Kriteriji ispod su preostala svojstva objekta nekretnine za koje nije predviđeno filtriranje te se neće uzeti u razmatranje, ali smo ih ipak naveli!</it></bold>
+                <br>
+                <br>
+
+                <label for="tip_grijanja">Tip grijanja:</label>
+                <input type="text" id="tip_grijanja" name="tip_grijanja" placeholder="Unesite tip grijanja">
+
+                <label for="lokacija">Lokacija:</label>
+                <input type="text" id="lokacija" name="lokacija" placeholder="Unesite lokaciju">
+
+                <label for="godina_izgradnje">Godina izgradnje:</label>
+                <input type="number" id="godina_izgradnje" name="godina_izgradnje" placeholder="Unesite godinu izgradnje">
+
+                <label for="datum_objave">Datum objave:</label>
+                <input type="date" id="datum_objave" name="datum_objave" placeholder="Unesite datum objave">
+            </fieldset>
+            <br><br>
+
+            <button type="button" id="generateHistogram">Iscrtaj Histogram</button>
+            <button type="button" id="izracunajKvadraturu">Izračunaj prosječnu kvadraturu</button>
+            <button type="button" id="nadjiOutlier">Nađi Outlier</button>
+            <button type="button" id="mojeNekretnine">Moje Nekretnine</button>
+        </form>
+
+        <!-- Polja za prikaz rezultata -->
+        <div id="rezultatKvadraturaDiv">
+            <h2>Prosječna kvadratura:</h2>
+            <textarea id="rezultat" placeholder="Iznos prosječne kvadrature" readonly></textarea>
+        </div>
+
+        <div id="rezultatMojeNekretnineDiv">
+            <h2>Moje nekretnine:</h2>
+            <textarea id="rezultatNekretnine" placeholder="Moje nekretnine:" readonly></textarea>
+        </div>
+
+        <div id="rezultatOutlierDiv">
+            <h2>Outlier:</h2>
+            <textarea id="rezultatOutlier" placeholder="Outlier:" readonly></textarea>
+        </div>
+        
+        <div id="chartsContainer"></div>
+    </div>
+
+   
+    <script src="../JS/SpisakNekretnina.js"></script>
+    <script src="../JS/StatistikaNekretnina.js"></script>
+    <script src="../JS/statistika.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

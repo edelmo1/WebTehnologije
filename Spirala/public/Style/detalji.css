@@ -1,0 +1,291 @@
+body {
+  background-color: #fdf1d3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body h3 {
+  margin-left: 20px;
+}
+
+iframe {
+  border: none; 
+  width: 100%;
+  height: 65px;
+}
+
+/* Stil za div #osnovno */
+#osnovno {
+  text-align: left;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+#osnovno img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stil za div #detalji */
+#detalji {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+#kolona1 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+#kolona2 {
+  order: 2;
+  flex: 1 1 auto;
+  align-self: auto;
+}
+
+#opis {
+  order: 3;
+  flex: 0 1 100%;
+  align-self: auto;
+}
+
+/* Stil za upite (default: jedan upit u redu) */
+#upiti {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 20px;
+  overflow: hidden; /* Da bismo imali bolju kontrolu nad prelistavanjem */
+}
+
+.upit {
+  border: 1px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 100%; /* Default širina za svaki upit */
+}
+
+/* Dugmad za navigaciju (carousel) */
+.button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Ekran veći od 800px: Prikazuj po tri upita u redu */
+@media (min-width: 800px) {
+  #upiti {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .upit {
+    flex: 1 1 calc(33.33% - 10px); /* Tri upita u redu */
+    box-sizing: border-box;
+    margin: 5px;
+  }
+}
+
+/* Ekran između 600px i 800px: Prikazuj po dva upita u redu */
+@media (min-width: 600px) and (max-width: 799px) {
+  #upiti {
+    flex-direction: column;
+  }
+  .upit {
+    width: 100%;
+  }
+}
+
+/* Ekran manji od 600px: Carousel prikaz */
+@media (max-width: 599px) {
+  #upiti {
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Skrivanje upita koji nisu prikazani */
+  }
+  
+  .upit {
+    display: none; /* Prikazat će se samo jedan upit */
+    width: 100%; /* Jedan upit u punoj širini */
+  }
+  
+  .upit:first-of-type {
+    display: block; /* Prikaži prvi upit */
+  }
+
+  /* Prikaz dugmadi za navigaciju */
+  .button {
+    display: block;
+  }
+}
+
+.nekretnina-card, .upit-card {
+  flex: 0 0 33%;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#upiti-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+
+
+
+#detalji {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexibilne kolone */
+  gap: 20px;  /* Razmak između stavki */
+  padding: 20px;
+}
+
+.nekretnina {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.slika-nekretnine {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.detalji-nekretnine {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.detalji-nekretnine h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.detalji-nekretnine p {
+  margin: 5px 0;
+}
+
+
+
+/* Stilovi za sekciju NOVO INTERESOVANJE */
+#forma-interesovanje {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#forma-interesovanje h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#interesovanjeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+input[type="number"],
+input[type="date"] {
+  appearance: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Stilovi za sekcije koje se dinamički prikazuju */
+#zahtjevFields,
+#ponudaFields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Responzivnost */
+@media (max-width: 768px) {
+  #forma-interesovanje {
+      padding: 15px;
+      width: 95%;
+  }
+
+  button[type="submit"] {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+}

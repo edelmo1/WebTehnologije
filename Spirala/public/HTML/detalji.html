@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bs-BA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalji</title>
+    <link rel="stylesheet" type="text/css" href="../Style/detalji.css">
+</head>
+<body>
+    <div id="meni"></div>
+    
+    <div id="osnovno">
+        <img id="slika-nekretnine" src="" alt="Nekretnina">
+        <p id="naziv"></p>
+        <p id="kvadratura"></p>
+        <p id="cijena"></p>
+    </div>
+
+    <h3>DETALJI</h3>
+    <div id="detalji">
+        <div id="kolona1">
+            <p id="grijanje"></p>
+            <p id="lokacija"></p>
+        </div>
+        <div id="kolona2">
+            <p id="godina"></p>
+            <p id="datum"></p>
+        </div>
+        <div id="opis">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="top5-nekretnina"></div>
+    
+    <h3>NOVO INTERESOVANJE</h3>
+    <div id="forma-interesovanje">
+        <form id="interesovanjeForm">
+            <div class="form-group">
+                <label for="tipInteresovanja">Tip interesovanja:</label>
+                <select id="tipInteresovanja" required>
+                    <option value="">Odaberite tip</option>
+                    <option value="upit">Upit</option>
+                    <option value="zahtjev">Zahtjev</option>
+                    <option value="ponuda">Ponuda</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="tekstInteresovanja">Tekst:</label>
+                <textarea id="tekstInteresovanja" required></textarea>
+            </div>
+            
+            <div id="zahtjevFields" style="display: none;">
+                <div class="form-group">
+                    <label for="trazeniDatum">Traženi datum:</label>
+                    <input type="date" id="trazeniDatum">
+                </div>
+            </div>
+            
+            <div id="ponudaFields" style="display: none;">
+                <div class="form-group">
+                    <label for="cijenaPonude">Cijena ponude:</label>
+                    <input type="number" id="cijenaPonude">
+                </div>
+                <div class="form-group">
+                    <label for="vezanaPonuda">Vezana ponuda:</label>
+                    <select id="vezanaPonuda">
+                        <option value="">Odaberite ponudu</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit">Dodaj interesovanje</button>
+        </form>
+    </div>
+
+    <h3>INTERESOVANJA</h3>
+    <div id="upiti">
+        <!-- Karosel sadrzaj -->
+    </div>
+
+    <div id="navigacija">
+        <button class="button" id="btnPrethodni">Prethodni</button>
+        <button class="button" id="btnSljedeci">Sljedeći</button>
+    </div>
+
+    <script src="../JS/PoziviAjax.js"></script>
+    <script src="../JS/meni.js"></script>
+    <script src="../JS/detalji.js"></script>
+</body>
+</html>

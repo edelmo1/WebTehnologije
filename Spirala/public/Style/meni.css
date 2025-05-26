@@ -1,0 +1,53 @@
+body {
+    background-color: #fdf1d3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a:hover span {
+    opacity: 0;  /* Sakriva samo tekst */
+    transition: opacity 0.5s;
+}
+
+li a:hover .icon {
+    transform: scale(2.5); 
+    width: auto; 
+}
+
+.icon {
+    display: block;
+    margin: 1px auto 0;
+    width: 24px;
+    height: 24px;
+    transition: transform 1s ease; 
+}
+
+
+#profilLink,
+#odjavaLink,
+#mojiUpitiLink,
+#statistikaLink{
+    display: none; /* Skriva ove opcije dok JavaScript ne postavi status */
+}

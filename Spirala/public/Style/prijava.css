@@ -1,0 +1,126 @@
+body {
+    background-color: #fdf1d3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    border: none; 
+    width: 100%;
+    height: 65px;
+}
+  
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ff9900;
+}
+
+#formDugme {
+    display: flex;
+    flex-direction: column; /* Omogućava da elementi budu vertikalno centrirani */
+    align-items: center;   /* Centriranje sadržaja */
+    justify-content: center;
+}
+
+/* Stilizacija forme */
+form {
+    max-width: 400px;
+    margin: 50px auto; /* Centriranje forme na stranici */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;  /* Omogućava vertikalno slaganje polja i dugmeta */
+    justify-content: center;
+    align-items: center;     /* Centriranje sadržaja forme */
+}
+
+/* Stilizacija input polja */
+input[type="text"],
+input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efekti prilikom fokusa na input polje */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;  /* Zelena boja na fokus */
+    background-color: #fff;
+    outline: none;
+}
+
+/* Stilizacija labela */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;  /* Tamnija boja za labelu */
+    text-transform: uppercase; /* Sve velike litere za labelu */
+}
+
+/* Stilizacija dugmeta za prijavu */
+#dugme {
+    width: auto;  /* Promijenjeno da ne bude cijela širina */
+    padding: 14px 40px;  /* Dodan padding za lijep izgled */
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Efekti za dugme */
+#dugme:hover {
+    background-color: #45a049;
+}
+
+/* Stilizacija za odgovore ispod forme (ako ih bude bilo) */
+#areaBelow {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsivnost za manje ekrane */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="password"],
+    #dugme {
+        font-size: 14px;
+    }
+}

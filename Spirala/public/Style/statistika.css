@@ -1,0 +1,150 @@
+/* Reset osnovnih margina i paddinga */
+body, h1, label, input, button, it {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+button:focus {
+    outline: none;
+}
+
+#chartsContainer {
+    margin-top: 30px;
+}
+
+it {
+    font-style: italic;
+    color: #888;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="text"], input[type="number"]::placeholder {
+    color: #aaa;
+}
+
+
+/* Polje za prikaz rezultata */
+#rezultatKvadraturaDiv,#rezultatMojeNekretnineDiv,#rezultatOutlierDiv {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#rezultatKvadraturaDiv h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#rezultatMojeNekretnineDiv h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#rezultatOutlierDiv h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+textarea#rezultat,textarea#rezultatNekretnine,textarea#rezultatOutlier {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    color: #555;
+    background: #fff;
+}
